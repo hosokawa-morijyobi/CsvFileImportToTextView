@@ -10,20 +10,18 @@
 
 <BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
    <center>
-      <AnchorPane prefHeight="400.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="400.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
-            <Label layoutX="53.0" layoutY="52.0" text="CSVファイルを選択してください。">
+            <Button layoutX="289.0" layoutY="47.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Button">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Label layoutX="61.0" layoutY="46.0" text="CSVファイルを選択してください">
                <font>
                   <Font size="18.0" />
-               </font>
-            </Label>
-            <Button layoutX="306.0" layoutY="46.0" mnemonicParsing="false" onAction="#onButtonClick" text="Button">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-            <ListView fx:id="listview" layoutX="265.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" />
-            <TextArea fx:id="textarea" layoutX="41.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" />
+               </font></Label>
+            <ListView fx:id="listView" layoutX="320.0" layoutY="93.0" prefHeight="200.0" prefWidth="200.0" />
+            <TextArea fx:id="textArea" layoutX="67.0" layoutY="93.0" prefHeight="200.0" prefWidth="200.0" />
          </children>
       </AnchorPane>
    </center>
